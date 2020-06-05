@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 样式初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="node.css">
+</head>
+<body>
+   <div id="app">
+        <app-header></app-header>
+        <todos></todos>
+   </div>
+</body>
+<!-- 1. 引进vue 依赖库 -->
+<script src="https://cn.vuejs.org/js/vue.js"></script>
+<!-- 引入组件 -->
+<script src="./router/router.js"></script>
+<script src="./utils/utils.js"></script>
+<script src="./components/header.js"></script>
+<script src="./components/todos.js"></script>
+<script src="./main.js"></script>
+
+</html>
